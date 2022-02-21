@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const name = 'Jose';
+const session = true;
 const JSX = (
   <div>
     <h1 className="main-title" style={{color: 'teal'}}>Hello {name}!</h1>
@@ -9,6 +10,14 @@ const JSX = (
   </div>
 );
 
-ReactDOM.render(JSX,
+const validateSession = (session) => {
+  if(session === true){
+      return JSX;
+  } else {
+    return <h1>You have not logged in</h1>
+  }
+}
+
+ReactDOM.render(validateSession(session),
   document.getElementById('root')
 );
