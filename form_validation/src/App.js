@@ -1,21 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
+import {Form} from './elements/Forms';
 
 const App = () => {
   return (
     <main>
       <Form action="">
-        <label htmlFor="">User</label>
-        <input type="text" placeholder="Username" />
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+          <label htmlFor="">User</label>
+          <input type="text" placeholder="Username" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <label htmlFor="">User</label>
+          <input type="text" placeholder="Username" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
       </Form>
     </main>
   );
 }
-
-const Form = styled.form`
-padding: 4em;
-background: papayawhip;
-`;
 
 export default App;
